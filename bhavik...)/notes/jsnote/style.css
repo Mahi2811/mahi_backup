@@ -1,0 +1,16 @@
+.user-img{
+    height: 200px !important;
+}
+.user{
+    height: 400px;
+}
+
+.usersselected{
+    height: 100vh;
+    width: 25%;
+    position: absolute;
+    left: -1000px;
+    z-index: 100;
+    overflow: auto;
+
+}

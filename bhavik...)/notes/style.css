@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    position: relative;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 30px;
+    gap: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    
+}
+.navbar i{
+    display: none;
+    font-size: 20px;
+
+}
+.navbar ul{
+    transition: 1s;
+}
+@media screen and (max-width:700px) {
+    .navbar ul {
+        position: absolute;
+        flex-direction: column;
+        height: 120px;
+        top: 100%;
+        width: -100%;
+        left: 0;
+        background-color: red;
+    }
+    .navbar i{
+        display: block;
+    }
+    
+}
+.main{
+    text-align: center;
+    color: rgb(123, 39, 201);
+    text-shadow: 1.5px 1px 0 red ;
+    
+    
+}
+.inputwrap{
+    margin: 0 auto;
+    width: fit-content;
+    
+}
+.inputwrap input[type='submit']{
+    background-color: rgb(241, 31, 31);
+    color: white;
+    padding: 10px 35px;
+    boxshadow: 1.5px 1px 0 rgb(230, 47, 47);
+}
+.inputwrap input[type='text']{
+    width: 300px;
+    height: 30px;
+}
+#jsnote{
+    width: 40%;
+    margin: 0 auto;
+   
+    padding: 10px;
+    
+}
+#jsnote .note{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 10px 0;
+     box-shadow: 0 3px 10px gray ;
+
+}

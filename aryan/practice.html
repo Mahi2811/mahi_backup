@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+
+    .background {
+        background-image: url(moon.jpg);
+        height: 100vh;
+        width: 100%;
+    }
+
+    .aryan {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: red;
+    }
+
+    .nav ul {
+        display: flex;
+    }
+
+    .nav ul li {
+        list-style: none;
+        color: white;
+        padding: 10px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 300px;
+
+    }
+
+    .drop {
+        position: relative;
+    }
+
+    .drop .dropdown {
+        position: absolute;
+        background-color: rgb(13, 168, 168);
+        top: 100%;
+        width: 200px;
+        display: none;
+    }
+
+    .drop:hover .dropdown {
+        display: block;
+    }
+.drop1{
+    position: relative;
+}
+.drop2{
+    position: absolute;
+    top: 100%;
+    background-color: blue;
+    width: 200px;
+    display: none;
+}
+.drop1:hover .drop2{
+    display: block;
+}
+</style>
+
+<body>
+
+
+
+
+
+    <div class="background">
+
+        <div class="aryan">
+
+            <div class="nav">
+                <ul>
+                    <li>Home</li>
+                    <li class="drop">Home
+                        <div class="dropdown">
+                            <p>hiiiiii</p>
+                            <p>hiiiiii</p>
+                            <p>hiiiiii</p>
+                            <p>hiiiiii</p>
+                            <p>hiiiiii</p>
+                            <p>hiiiiii</p>
+                            <p>hiiiiii</p>
+                        </div>
+
+                    </li>
+                    <li class="drop1">Home
+
+                        <div class="drop2">
+                            <p>HIIII</p>
+                            <p>HIIII</p>
+                            <p>HIIII</p>
+                            <p>HIIII</p>
+                            <p>HIIII</p>
+                            <p>HIIII</p>
+                        </div>
+
+
+                    </li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+
+
+            <div class="btn">
+                <button>click here</button>
+            </div>
+
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+        <div class="button">
+
+            <button>click here</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

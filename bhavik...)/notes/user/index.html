@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .user {
+        gap: 20px;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="users" id="users">
+
+
+    </div>
+    </div>
+
+</body>
+<script>
+    let userdetail = document.getElementById('users')
+    let users = [
+        {
+            name: 'bhavik',
+            age: 22,
+            id: 1
+        },
+        {
+            name: 'sandip',
+            age: 21,
+            id: 2
+        },
+        {
+            name: 'dhruvin',
+            age: 20,
+            id: 3
+        },
+        {
+            name: 'ashish',
+            age: 25,
+            id: 4
+        }
+
+    ]
+    userdetail.innerHTML = users.map((x) => {
+        return ` <div class="user" id="user">
+            <h3>${x.name}</h3>
+            <p>${x.age}</p>
+            <button onclick='Delete(${x.id})'>${x.id}remove</button> `
+    }).join('')
+
+
+
+
+
+    
+    function Delete(id) {
+
+        users = users.filter((u) => u.id != id)
+
+        userdetail.innerHTML = users.map((x) => {
+            return ` <div class="user" id="user">
+            <h3>${x.name}</h3>
+            <p>${x.age}</p>
+            <button onclick='Delete(${x.id})'>${x.id}remove</button> `
+        })
+    }
+</script>
+
+</html>

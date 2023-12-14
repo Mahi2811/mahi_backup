@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: red;
+    }
+
+    .navbar .nav ul {
+        display: flex;
+    }
+
+    .nav ul li {
+        list-style: none;
+        padding: 10px;
+    }
+    .nav .drop{
+        position: relative;
+    }
+    .nav .drop .dropdown{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: aqua;
+        width: 100px;
+        display: none;
+    }
+    .nav .drop:hover .dropdown{
+        display: block;
+    }
+</style>
+
+<body>
+
+    <div class="navbar">
+
+
+        <div class="nav">
+            <ul>
+                <li class="drop">Home
+                    <div class="dropdown">
+                        <p>HIIIIIII</p>
+                        <p>HIIIIIII</p>
+                        <p>HIIIIIII</p>
+                        <p>HIIIIIII</p>
+                        <p>HIIIIIII</p>
+                    </div>
+                </li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <div class="logo">
+            <h1>hiii</h1>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
